@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>Socket client</title>
+    </head>
+    <body>
+        
+	    <input id="uuid" placeholder="uuid..." size="31" />
+        &nbsp;&nbsp;<input id="jwt" placeholder="jwt..." size="30" />
+		&nbsp;&nbsp;&nbsp;<button onclick="checkOnline();">Check online</button>
+		hanm: dd609a4d-3aff-4eef-a53c-9fa76d669a03 &nbsp;&nbsp;&nbsp;&nbsp; anhdv: f8b3ef52-a8c5-499f-a204-7e825b653155
+        &nbsp;&nbsp;&nbsp;&nbsp; nghiadv: 2d4abf6f-8f40-4d5d-b62a-5111f5f680b1
+        <br /><br />
+        <input id="msg" placeholder="msg..." size="31" />
+        &nbsp;&nbsp;<button onclick="sendMsg();">Send msg</button>
+       
+		<script src="http://localhost:5001/socket.io/socket.io.js"></script>
+        <!-- <script src="http://192.168.61.106:5060/socket.io/socket.io.js"></script> -->
+        <!-- <script src="https://socket.colearn.vn:5001/socket.io/socket.io.js"></script> -->
+        <script type="text/javascript">
+            let socket;
+            try {
+                let ioParams = {'reconnection limit': 3000, 'max reconnection attempts': Number.MAX_VALUE, 'connect timeout':3000};
+
+                let host = 'http://localhost:5001';
+                // let host = 'http://192.168.61.106:5060';
+                // let host = 'https://socket.colearn.vn:5001';
+                socket = io.connect(host, {}, ioParams);
+            } catch (e) {
+                console.log('socket connection error: ' + e.toString());
+            }
+
+            setTimeout(() => {
+                if ( socket ) {
+
+                    socket.on('connect', function () {
+                        console.log('socketId [' + socket.id + '] is connected!');
+                    });
+
+                    socket.on('NOTIFY_MESSAGE', function (data) {
+                        if ( data ) {
+                           console.log(data);
+                        }
+                    });
+                }
+            }, 200);
+            
+        </script>
+    </body>
+</html>

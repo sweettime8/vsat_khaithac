@@ -1,0 +1,17 @@
+[    
+    {
+        "path": "/vessel-group-mapping/search-list",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/vessel-group-mapping/upsert",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/vessel-group-mapping/remove",
+        "method": "POST",
+        "rabbit": "rpc"
+    }
+]

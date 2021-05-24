@@ -1,0 +1,22 @@
+[    
+    {
+        "path": "/rule/event-list",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/rule/event-count",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/rule/update-read-status",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/rule/event-detail",
+        "method": "POST",
+        "rabbit": "rpc"
+    }
+]

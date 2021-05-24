@@ -1,0 +1,47 @@
+[    
+    {
+        "path": "/media/list/search",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/media/list-relation/search",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/media/fetch-m3u8-file",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/media/detail-relation",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/media/list/updateStatusMediaId",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/media/list/addCommentCommon",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/media/list-by-relation-id",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/media/list-comments",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/media/total-by-object",
+        "method": "POST",
+        "rabbit": "rpc"
+    }
+]

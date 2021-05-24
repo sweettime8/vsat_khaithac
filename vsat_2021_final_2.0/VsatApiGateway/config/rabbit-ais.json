@@ -1,0 +1,98 @@
+[    
+    {
+        "path": "/ais/search-list",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/ais/search-list-general",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/ais/object-group/search-list",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/ais/vessel-group/detail",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/ais/vessel-group/upsert",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/ais/vessel-group/upsert",
+        "method": "PUT",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/ais/object-group/remove",
+        "method": "DELETE",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/ais/vessel/search-list",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/ais/vessel/detail",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/ais/vessel/upsert",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/ais/vessel/upsert",
+        "method": "PUT",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/ais/vessel/remove",
+        "method": "DELETE",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/ais/vessel-group-mapping/search-list",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/ais/vessel-group-mapping/upsert",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/ais/vessel-group-mapping/upsert",
+        "method": "PUT",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/ais/vessel-group-mapping/remove",
+        "method": "DELETE",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/ais/country",
+        "method": "GET",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/ais/vessel-type",
+        "method": "GET",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/ais/object/add-to-group",
+        "method": "POST",
+        "rabbit": "rpc"
+    }
+
+]

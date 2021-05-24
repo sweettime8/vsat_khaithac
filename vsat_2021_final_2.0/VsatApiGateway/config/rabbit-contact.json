@@ -1,0 +1,136 @@
+[
+    {
+        "path": "/contact/vessel/search",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/contact/vessel/detail/getDetailVessel",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/contact/vessel/checkIpVessel",
+        "method": "POST",
+        "rabbit": "rpc"
+    }
+    ,
+    {
+        "path": "/contact/vessel/addIpVessel",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/contact/vessel/delIpVessel",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+
+    {
+        "path": "/contact/Object/search",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/contact/Object/detail/getDetailObjectInfo",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/contact/Object/checkIpObjectInfo",
+        "method": "POST",
+        "rabbit": "rpc"
+    }
+    ,
+    {
+        "path": "/contact/Object/addIpObjectInfo",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/contact/Object/addObjectUnInfo",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/contact/Object/delIpObjectInfo",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+
+    {
+        "path": "/contact/land/search",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/contact/land/detail/getDetailHeadquarter",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/contact/land/checkIpHeadQuarter",
+        "method": "POST",
+        "rabbit": "rpc"
+    }
+    ,
+    {
+        "path": "/contact/land/addIpHeadQuarter",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/contact/land/delIpHeadQuarter",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/contact/land/addHeadquater",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/contact/land/updateHeadquater",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/contact/vessel",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/contact/vessel",
+        "method": "PUT",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/contact/vessel",
+        "method": "DELETE",
+        "rabbit": "rpc"
+    },    
+    {
+        "path": "/contact/land/deleteHeadquater",
+        "method": "DELETE",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/contact/Object/editObjectUnInfo",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/contact/land/addPhoneHeadQuarter",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/contact/land/delPhoneHeadQuarter",
+        "method": "POST",
+        "rabbit": "rpc"
+    },{
+        "path": "/contact/Object/delObjectUnInfo",
+        "method": "DELETE",
+        "rabbit": "rpc"
+    }
+]

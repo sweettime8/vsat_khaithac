@@ -1,0 +1,1 @@
+java -jar -Xms128m -Xmx256m target\VsatUpload-0.0.1.jar

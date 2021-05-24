@@ -1,0 +1,31 @@
+{
+  "name": "socket.io-chat",
+  "version": "0.0.0",
+  "description": "Vsat socket",
+  "main": "app.js",
+  "author": "Grant Timmerman",
+  "private": true,
+  "license": "BSD",
+  "dependencies": {
+    "amqplib": "^0.6.0",
+    "better-queue": "^3.8.10",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "log4js": "^6.3.0",
+    "mqtt": "^4.2.1",
+    "mysql": "^2.18.1",
+    "pm2": "^4.5.6",
+    "queue-fifo": "^0.2.6",
+    "redis": "^3.0.2",
+    "serialport": "^9.0.1",
+    "sf": "^0.2.0",
+    "socket.io": "^2.4.1",
+    "socket.io-redis": "^5.4.0",
+    "underscore": "^1.11.0"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}

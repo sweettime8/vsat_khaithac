@@ -1,0 +1,17 @@
+[    
+    {
+        "path": "/map/save-area",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/map/get-list-area",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/map/del-area",
+        "method": "POST",
+        "rabbit": "rpc"
+    }
+]

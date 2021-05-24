@@ -1,0 +1,22 @@
+[    
+    {
+        "path": "/vessel-group/search-list",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/vessel-group/detail",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/vessel-group/upsert",
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/vessel-group/remove",
+        "method": "POST",
+        "rabbit": "rpc"
+    }
+]

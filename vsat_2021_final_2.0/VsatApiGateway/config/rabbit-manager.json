@@ -1,0 +1,12 @@
+[
+    {
+        "path": "/manager/source/get-all",
+        "method": "GET",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/manager/media-type/get-all",
+        "method": "GET",
+        "rabbit": "rpc"
+    }
+]

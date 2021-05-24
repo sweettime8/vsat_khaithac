@@ -1,0 +1,1 @@
+java -jar -Xms128m -Xmx256m target\VsatIdService-0.0.1.jar

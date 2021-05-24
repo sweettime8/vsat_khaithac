@@ -1,0 +1,72 @@
+[    
+    {
+        "path": "/statistic/flrl", 
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/statistic/amount", 
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/statistic/media", 
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/statistic/total", 
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/statistic/totalLineChart", 
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/statistic/totalPieChart", 
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/statistic/typeservice", 
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/statistic/typeservicePieChart", 
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/statistic/typeserviceLineChart", 
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/statistic/pcap", 
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/statistic/vessel", 
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/statistic/mediaChartist", 
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/statistic/amountChartist", 
+        "method": "POST",
+        "rabbit": "rpc"
+    },
+    {
+        "path": "/statistic/flRlChartist", 
+        "method": "POST",
+        "rabbit": "rpc"
+    }      
+]

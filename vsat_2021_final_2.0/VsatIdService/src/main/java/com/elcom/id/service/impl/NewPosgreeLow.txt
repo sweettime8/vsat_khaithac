@@ -1,0 +1,98 @@
+create table vsat02.role    
+	id integer not null generated always as identity ( increment 1 start 1 minvalue 1 maxvalue 2147483647 cache 1 ),
+    role_name character varying(255) collate pg_catalog."default",
+    role_code character varying(100) collate pg_catalog."default",
+    is_admin integer default 0,
+    created_by character varying(1024) collate pg_catalog."default",
+    created_at timestamp without time zone default current_timestamp,
+    modify_date timestamp without time zone default current_timestamp,
+    is_delete integer,
+    constraint role_pkey primary key (id)
+);	
+
+create table vsat02.path
+(
+    id integer not null generated always as identity ( increment 1 start 1 minvalue 1 maxvalue 2147483647 cache 1 ),
+    service_code character varying(255) collate pg_catalog."default" default null::character varying,
+    api_path character varying(255) collate pg_catalog."default" default null::character varying,
+    is_delete integer default 0,
+    created_at timestamp without time zone default current_timestamp,
+    api_detail character varying(255) collate pg_catalog."default",
+    constraint path_pkey primary key (id)
+);
+
+create table vsat02.role_path_permission
+(
+    id integer not null generated always as identity ( increment 1 start 1 minvalue 1 maxvalue 2147483647 cache 1 ),
+    role_code character varying(100) collate pg_catalog."default",
+    service_code character varying(255) collate pg_catalog."default" default null::character varying,
+    api_path character varying(255) collate pg_catalog."default" default null::character varying,
+    can_create integer default 0,
+    can_read integer default 0,
+    can_update integer default 0,
+    can_delete integer default 0,
+    can_report integer default 0,
+    created_at timestamp without time zone default current_timestamp,
+    is_delete integer default 0,
+    constraint role_path_permission_pkey primary key (id)
+)
+
+create table vsat02.role_user
+(
+    id integer not null generated always as identity ( increment 1 start 1 minvalue 1 maxvalue 2147483647 cache 1 ),
+    uuid_user character varying(40) collate pg_catalog."default" not null,
+    role_code character varying(100) collate pg_catalog."default",
+    is_delete integer default 0,
+    created_at timestamp without time zone default current_timestamp,
+    constraint role_user_pkey primary key (id)
+);
+
+create table vsat02.service
+(
+    id integer not null generated always as identity ( increment 1 start 1 minvalue 1 maxvalue 2147483647 cache 1 ),
+    service_code character varying(255) collate pg_catalog."default" default null::character varying,
+    service_name character varying(255) collate pg_catalog."default" default null::character varying,
+    is_delete integer default 0,
+    created_at timestamp without time zone default current_timestamp,
+    constraint service_pkey primary key (id)
+);
+
+create table vsat02.user
+(
+    uuid character varying(40) collate pg_catalog."default" not null,
+    username character varying(100) collate pg_catalog."default",
+    email character varying(200) collate pg_catalog."default",
+    mobile character varying(64) collate pg_catalog."default",
+    fullname character varying(200) collate pg_catalog."default",
+    password character varying(512) collate pg_catalog."default",
+    status integer default 1,
+    avatar character varying(1024) collate pg_catalog."default",
+    address character varying(1024) collate pg_catalog."default",
+    birthday character varying(64) collate pg_catalog."default",
+    gender integer,
+    unit_name character varying(512) collate pg_catalog."default",
+    department_name character varying(512) collate pg_catalog."default",
+    position_name character varying(512) collate pg_catalog."default",
+    description character varying(200) collate pg_catalog."default",
+    created_by character varying(100) collate pg_catalog."default",
+    modify_by character varying(100) collate pg_catalog."default",
+    created_at timestamp without time zone default current_timestamp,
+    last_update timestamp without time zone default current_timestamp,
+    is_delete integer,
+    constraint user_pkey primary key (uuid)
+)
+
+tablespace pg_default;
+
+alter table public."user"
+    owner to vsat;
+
+comment on column public."user"."status"
+    is '1: hoạt động, -1: khóa';
+
+comment on column public."user"."gender"
+    is '0-nữ, 1-nam,2-bỏ qua';
+
+comment on column public."user"."is_delete"
+    is 'trạng thái xóa 0 - mặc định, 1 - đã xóa';
+

@@ -1,0 +1,1 @@
+java -jar target\VsatIdService-0.0.1.jar
